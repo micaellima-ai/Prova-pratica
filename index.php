@@ -19,10 +19,10 @@ if ($_SERVER ["REQUEST_METHOD"]==="POST"){
     }else{
         $novoFuncionario = CriarFuncionario(
             uniqid ("funcionario_"),
-            $nome;
+            $nome,
             $email,
-            $salario,
-        )
+            $salario
+        );
     }
     }
 }
