@@ -6,26 +6,23 @@ if ($_SERVER ["REQUEST_METHOD"]==="POST"){
     $acao = $_POST ["acao"] ?? "";
     $nome = $_POST ["nome"] ?? "";
     $email = $_POST ["email"] ?? "";
-    $salario = $_PSOT ["salario"] ?? "";
+    $salario = $_POST ["salario"] ?? "";
+    
     
     //cadastrar
     if ($acao === "cadastrar"){
         $nome = trim($_POST["nome"] ?? "");
         $email = trim($_POST["email"] ?? "");
         $salario = trim($_POST["salario"] ?? "");
+       
+
     if ($nome === "" || $email === "" || $salario === ""){
         $mensagem = "Preencha toodos os campos corretamente";
         $tipoMensagem = "erro";
-    }else{
-        $novoFuncionario = CriarFuncionario(
-            uniqid ("funcionario_"),
-            $nome,
-            $email,
-            $salario
-        );
-    }
     }
 }
+
+
 ?>
 
 
