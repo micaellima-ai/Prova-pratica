@@ -1,6 +1,6 @@
 <?php 
 
-require_once "conexao.php";
+require_once __DIR__. "/config/conexao.php";
 
 
     abstract class funcionario{
@@ -31,18 +31,6 @@ require_once "conexao.php";
             }
         }
 
-    
-
-    
-
-    
-    
-
-
-
-
-
-
-
+       
 
 ?>
